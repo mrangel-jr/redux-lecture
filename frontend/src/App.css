@@ -1,0 +1,131 @@
+.content {
+  display: flex;
+  justify-content: center;
+
+}
+
+.App-header {
+  display: flex;
+  background-color: rgba(67, 119, 187, 0.623);
+  /*height: 100px; */
+  padding: 20px;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-post {
+  align-self: start;
+  color: #CFE0DC; font-family: "Sans Serif"; font-size: 20px;  font-weight: bold;  line-height: 20px;  text-align: right;
+}
+.Menubar {
+  width: 800px;
+  display: flex;
+}
+
+.menu { 
+  padding-right: 15px;
+  list-style: none;
+  color: rgba(43, 10, 40, 0.705); 
+  font-family: "Avenir Next"; 
+  font-size: 20px;  
+  font-weight: bold;
+}
+
+.posts {
+  color: rgba(223, 165, 41, 0.877);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  width: 800px;
+  align-self: center;
+  padding: 10px
+}
+
+.post {
+  color: rgba(4, 136, 33, 0.822);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  padding: 10px 0px;
+}
+.post .infos{
+  width: 100%;
+}
+.info {
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #4A4A4A; font-family: "Sans Serif"; font-size: 10px;  
+  /*width: 100%;*/
+}
+.info span {
+  margin-right: 5px;
+}
+.info .tag {
+  color: #A1233E; font-family: "Sans Serif"; font-size: 14px;   text-align: center;
+  border-radius: 5px; 
+  background-color: #BACFD4;
+  padding: 0 10px;
+}
+.post .title {
+  color: black; font-family: "Sans Serif"; font-size: 24px;  font-weight: bold; 
+}
+.comments-count {
+    height: 15px; width: 77px;  color: rgb(223, 9, 55); font-family: "Sans Serif"; font-size: 10px;  
+}
+.vote-control {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40px;
+
+  color: #4A4A4A; font-family: "Sans Serif"; font-size: 15px;   text-align: center;
+  margin-right: 10px;
+}
+.posts .body{
+  margin-left: 55px;
+  color: #A1233E; font-family: "Sans Serif"; font-size: 14px; 
+}
+
+.comments {
+  color: white;
+  padding: 15px 0px;
+  width: 100%;
+}
+.comment {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 5px;
+}
+.comment .text {
+  color: #4B101D; font-family: "Avenir Next"; font-size: 14px; 
+}
+.menu.active {
+  color: white; 
+}
+
+.Menubar a {
+  text-decoration: none;
+}
+
+.actions {
+  display: flex;
+  color: #A1233E; font-family: "Avenir Next"; font-size: 12px;  font-weight: bold;  text-align: right;
+}
+
+.actions a {
+  padding-right: 10px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
