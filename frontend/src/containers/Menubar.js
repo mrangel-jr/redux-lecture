@@ -63,13 +63,7 @@ Home
 	}
 }
 
-const mapStateToProps = (state) => {
-	return {
-		category_filter: state.category_filter,
-		categories: state.categories,
-		user: state.user
-	};
-};
+const mapStateToProps = ({ category_filter, categories, user }) => ({ category_filter, categories, user });
 
 const mapDispatchToProps = { changeCategoryFilter, loadCategories, loadPosts };
 
