@@ -47,7 +47,9 @@ class PostsView extends Component {
           
 				<div className="posts">
 					{posts && posts.map( (post) => (
-						<PostHeaderContainer post={post} />
+						<PostHeaderContainer 
+					 		key={post.id}
+					 		post={post} />
 					))}
 				</div>
 			</div>
