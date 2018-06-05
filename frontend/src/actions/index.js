@@ -59,7 +59,8 @@ export function changeOrderPostsFilter({ order_posts_filter }) {
 }
 
 //posts
-export function addPost ({ id, timestamp, title, body, author, category, voteScore, commentCount, comments }) {
+export function addPost (post) {
+	const { id, timestamp, title, body, author, category, voteScore, commentCount, comments } = post;
 	return dispatch => {
 		ReadApi.addPost(id, timestamp, title, body, author, category, voteScore, commentCount, comments)
 			.then(() => {
