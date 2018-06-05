@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ModalComment from '../components/ModalComment';
 import Comment from '../components/Comment';
+import Erro404 from '../components/Erro404';
 import PostHeaderContainer from '../containers/PostHeaderContainer';
 import { deletePost, upVoteComment, downVoteComment, deleteComment, setPost,upVotePost, downVotePost, setComment, toggleModalPost, isNewPost} from '../actions';
 import {withRouter} from 'react-router-dom';
@@ -19,7 +20,9 @@ class PostView extends Component {
 		const {post,setComment, deleteComment} = this.props;
 
 		if ( post === null || post === undefined || post.deleted === true ) {
-			return null;
+			return (
+				<Erro404/>
+			);
 		}
 		else {
 			return ( 
